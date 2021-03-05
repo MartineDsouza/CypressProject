@@ -1,0 +1,6 @@
+{
+    "watchForFileChanges" : false,
+    "reporter" : "cypress-mochawesome-reporter",
+    "projectId":"pkk7jg",
+    "experimentalStudio": true
+}

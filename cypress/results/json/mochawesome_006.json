@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-03-05T06:02:19.074Z",
+    "end": "2021-03-05T06:02:24.786Z",
+    "duration": 5712,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b9ce44df-b452-45ea-9e6b-4d3ed2fc8537",
+      "title": "",
+      "fullFile": "cypress\\integration\\login.ts",
+      "file": "cypress\\integration\\login.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8ab07bbd-a434-4360-8e13-44f4b4c2cda1",
+          "title": "All login tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "login test",
+              "fullTitle": "All login tests login test",
+              "timedOut": null,
+              "duration": 1683,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// loginPage.navigate('https://trytestingthis.netlify.app/')\nloginPage.loginWithValidCredentials('test', 'test');\n// loginPage.enterUsername('test')\n// loginPage.enterPassword('test')\n// loginPage.clickLogin()\n// cy.visit('https://trytestingthis.netlify.app/')\n// cy.get('#uname').type('test')\n// cy.get('#pwd').type('test')\n// cy.get('[type=\"submit\"').click()\n// cy.contains('Login Successful')",
+              "err": {},
+              "uuid": "2aa82c84-7a1e-4db9-a6ee-8029ab60228c",
+              "parentUUID": "8ab07bbd-a434-4360-8e13-44f4b4c2cda1",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "login test - invalid creds",
+              "fullTitle": "All login tests login test - invalid creds",
+              "timedOut": null,
+              "duration": 1239,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// loginPage.navigate('https://trytestingthis.netlify.app/')\nloginPage.loginWithInvalidCredentials('abc', '123');",
+              "err": {},
+              "uuid": "5d424a77-31a1-45fc-bf67-9ddbb15cf1ea",
+              "parentUUID": "8ab07bbd-a434-4360-8e13-44f4b4c2cda1",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2aa82c84-7a1e-4db9-a6ee-8029ab60228c",
+            "5d424a77-31a1-45fc-bf67-9ddbb15cf1ea"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2922,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results/json",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

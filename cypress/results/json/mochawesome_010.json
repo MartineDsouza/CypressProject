@@ -1,0 +1,129 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-03-05T06:33:46.429Z",
+    "end": "2021-03-05T06:34:08.404Z",
+    "duration": 21975,
+    "testsRegistered": 2,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 1,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "a53d6385-b5ce-4a73-ac31-3cb575b412ec",
+      "title": "",
+      "fullFile": "cypress\\integration\\login.ts",
+      "file": "cypress\\integration\\login.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "34b3d988-f87c-422d-bfdf-9f16d6fbb5e9",
+          "title": "All login tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "login test",
+              "fullTitle": "All login tests login test",
+              "timedOut": null,
+              "duration": 21851,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"Failed screenshot\",\n  \"value\": \"screenshots\\\\login.ts\\\\All login tests -- login test -- before each hook (failed).png\"\n}",
+              "code": "// loginPage.navigate('https://trytestingthis.netlify.app/')\nloginPage.loginWithValidCredentials('test', 'test');\n// loginPage.enterUsername('test')\n// loginPage.enterPassword('test')\n// loginPage.clickLogin()\n// cy.visit('https://trytestingthis.netlify.app/')\n// cy.get('#uname').type('test')\n// cy.get('#pwd').type('test')\n// cy.get('[type=\"submit\"').click()\n// cy.contains('Login Successful')",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://trytestingthis.netlify.app/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ETIMEDOUT 2400:6180:0:d1::650:7001:443\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `All login tests`",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://trytestingthis.netlify.app/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ETIMEDOUT 2400:6180:0:d1::650:7001:443\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `All login tests`\n    at http://localhost:61447/__cypress/runner/cypress_runner.js:159076:23\n    at visitFailedByErr (http://localhost:61447/__cypress/runner/cypress_runner.js:158436:12)\n    at http://localhost:61447/__cypress/runner/cypress_runner.js:159075:11\n    at tryCatcher (http://localhost:61447/__cypress/runner/cypress_runner.js:10765:23)\n    at Promise._settlePromiseFromHandler (http://localhost:61447/__cypress/runner/cypress_runner.js:8700:31)\n    at Promise._settlePromise (http://localhost:61447/__cypress/runner/cypress_runner.js:8757:18)\n    at Promise._settlePromise0 (http://localhost:61447/__cypress/runner/cypress_runner.js:8802:10)\n    at Promise._settlePromises (http://localhost:61447/__cypress/runner/cypress_runner.js:8878:18)\n    at _drainQueueStep (http://localhost:61447/__cypress/runner/cypress_runner.js:5472:12)\n    at _drainQueue (http://localhost:61447/__cypress/runner/cypress_runner.js:5465:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:61447/__cypress/runner/cypress_runner.js:5481:5)\n    at Async.drainQueues (http://localhost:61447/__cypress/runner/cypress_runner.js:5351:14)\nFrom Your Spec Code:\n    at LoginPage../cypress/pages/login_pages.ts.LoginPage.navigate (http://localhost:61447/__cypress/tests?p=cypress\\integration\\login.ts:160:12)\n    at Context.eval (http://localhost:61447/__cypress/tests?p=cypress\\integration\\login.ts:103:19)\n\nFrom Node.js Internals:\n      Error: connect ETIMEDOUT 2400:6180:0:d1::650:7001:443\n      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1141:16)\n  ",
+                "diff": null
+              },
+              "uuid": "fc5f6f8b-40e0-4048-adb4-95e78db7299f",
+              "parentUUID": "34b3d988-f87c-422d-bfdf-9f16d6fbb5e9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "login test - invalid creds",
+              "fullTitle": "All login tests login test - invalid creds",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// loginPage.navigate('https://trytestingthis.netlify.app/')\nloginPage.loginWithInvalidCredentials('abc', '123');",
+              "err": {},
+              "uuid": "ada3b61b-27c2-4327-ba04-dacd3e38259e",
+              "parentUUID": "34b3d988-f87c-422d-bfdf-9f16d6fbb5e9",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "fc5f6f8b-40e0-4048-adb4-95e78db7299f"
+          ],
+          "pending": [],
+          "skipped": [
+            "ada3b61b-27c2-4327-ba04-dacd3e38259e"
+          ],
+          "duration": 21851,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results/json",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
