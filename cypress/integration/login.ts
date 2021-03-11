@@ -1,4 +1,4 @@
-import {LoginPage} from '../pages/login_pages'
+import {LoginPage} from '../pages/loginPage'
 
 describe('All login tests', function(){
 let loginPage = new LoginPage()
